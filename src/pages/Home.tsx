@@ -290,15 +290,15 @@ export default function Home() {
         <div className="hero-overlay"></div>
         <div className="hero-grid-pattern"></div>
         <div className="hero-content">
-          <div className="hero-badge"><span className="hero-badge-dot"></span>Chennai's Premier Fitness Center</div>
+          <div className="hero-badge"><span className="hero-badge-dot"></span>Korukkupet, Old Washermanpet – Chennai 600021</div>
           <h1 className="hero-title">Transform Your Body.<span className="hero-title-gold">Elevate Your Life.</span></h1>
-          <p className="hero-sub">Join Sky Gym and experience world-class fitness with expert guidance, modern equipment, and a community that pushes you to be your best every day.</p>
+          <p className="hero-sub">Join Sky Gym – a well-known fitness centre in Old Washermanpet, offering affordable gym memberships, strength training, cardio workouts, and general fitness exercise facilities for your daily workout routine.</p>
           <div className="hero-ctas">
             <a href="#membership" className="btn-primary">Get Started</a>
-            <a href="#contact" className="btn-outline">Book Free Trial</a>
+            <a href="#contact" className="btn-outline">Enquire Now</a>
           </div>
           <div className="hero-stats">
-            {[["500+","Members"],["10+","Years Active"],["4.8★","Rated"],["All","Equipment"]].map(([n,l]) => (
+            {[["48+","Reviews"],["4.1★","Rated"],["₹250","Monthly"],["All","Levels"]].map(([n,l]) => (
               <div className="stat" key={l}><div className="stat-num">{n}</div><div className="stat-label">{l}</div></div>
             ))}
           </div>
@@ -312,9 +312,9 @@ export default function Home() {
         <div className="about-text reveal-right">
           <div className="section-label">About Us</div>
           <h2 className="section-title">More Than<br />Just a <span className="section-title-gold">Gym</span></h2>
-          <p>Sky Gym is a modern fitness center located in Chennai, dedicated to helping individuals achieve their health and wellness goals in a welcoming, supportive environment.</p>
-          <p>We believe fitness is not just about lifting weights — it's about building confidence, discipline, and a better lifestyle for every member who walks through our doors.</p>
-          <p>With expert guidance, advanced equipment, and personalized programs, we ensure every member reaches their full potential — whatever their starting point.</p>
+          <p>Sky Gym is a well-known local gym and fitness centre located at Thiruvottiyur High Road, Korukkupet, Old Washermanpet – offering affordable memberships, strength training, cardio workouts, and general fitness facilities.</p>
+          <p>We welcome members of all fitness levels — whether you're a beginner starting your journey or an experienced athlete looking to push your limits in a friendly, supportive environment.</p>
+          <p>With accessible pricing starting at just ₹250/month and flexible morning & evening timings, Sky Gym makes daily fitness easy and convenient for the entire community.</p>
           <div className="about-features">
             {["Certified Trainers","Modern Equipment","Personalized Programs","All Fitness Levels","Hygienic Environment","Flexible Timings"].map((f) => (
               <div className="about-feat" key={f}><span className="about-feat-dot"></span>{f}</div>
@@ -330,12 +330,12 @@ export default function Home() {
         </div>
         <div className="services-grid">
           {[
-            {icon:"🏋️",title:"Personal Training",desc:"One-on-one coaching sessions tailored to your goals — fat loss, muscle gain, or overall wellness.",tags:["Custom Plans","Fat Loss","Muscle Gain"]},
-            {icon:"🧘",title:"Group Classes",desc:"Energetic group sessions including Zumba, Yoga, Pilates, HIIT, and more — led by certified instructors.",tags:["Zumba","Yoga","HIIT","Pilates"]},
-            {icon:"🥊",title:"Boxing & MMA",desc:"Learn boxing, kickboxing and mixed martial arts for fitness, self-defense, and competition.",tags:["Boxing","Kickboxing","MMA"]},
-            {icon:"💪",title:"Strength Training",desc:"Comprehensive free weights and machines to build strength, improve posture and transform your physique.",tags:["Free Weights","Machines","Powerlifting"]},
-            {icon:"🏃",title:"Cardio Zone",desc:"State-of-the-art cardio equipment including treadmills, ellipticals, bikes and rowing machines.",tags:["Treadmills","Elliptical","Rowing"]},
-            {icon:"🥗",title:"Nutrition Guidance",desc:"Expert dietary advice and personalized meal planning to complement your workout and maximize results.",tags:["Meal Plans","Diet Advice","Supplements"]},
+            {icon:"🏋️",title:"Gym Workouts",desc:"Comprehensive gym workout sessions covering weights and general exercises suitable for all fitness levels and daily routines.",tags:["Weights","General Exercise","Daily Routine"]},
+            {icon:"🏃",title:"Cardio Facilities",desc:"Exercise and cardio facilities designed to improve your endurance, stamina, and cardiovascular health effectively.",tags:["Cardio","Endurance","Stamina"]},
+            {icon:"🤸",title:"Floor Exercises",desc:"Dedicated floor exercise options for stretching, bodyweight training, core strengthening, and flexibility workouts.",tags:["Bodyweight","Core","Flexibility"]},
+            {icon:"💪",title:"Weight Training",desc:"Full weight training and strength building equipment to help you build muscle, increase power and transform your body.",tags:["Strength","Muscle","Power"]},
+            {icon:"🏟️",title:"Fitness Space",desc:"Spacious and well-maintained fitness space for daily workout routines in a clean, welcoming environment.",tags:["Daily Workout","Clean Space","All Levels"]},
+            {icon:"📅",title:"Monthly Memberships",desc:"Affordable monthly gym subscription plans starting at ₹250/month. Call +91 97911 48321 for membership details.",tags:["₹250/Month","Affordable","Flexible"]},
           ].map((s) => (
             <div className="service-card reveal" key={s.title}>
               <div className="service-icon">{s.icon}</div>
@@ -388,10 +388,10 @@ export default function Home() {
         </div>
         <div className="plans-grid">
           {[
-            {dur:"1 Month",period:"Monthly Plan",price:"1,500",features:["Full Gym Access","Locker Room","Basic Cardio Zone","Strength Area"],popular:false},
-            {dur:"3 Months",period:"Quarterly Plan",price:"3,800",features:["Full Gym Access","Group Classes (4/mo)","Locker Room","Nutrition Basics","Cardio + Strength"],popular:true,badge:"Most Popular"},
-            {dur:"6 Months",period:"Half-Yearly Plan",price:"6,500",features:["Full Gym Access","Unlimited Group Classes","Personal Assessment","Nutrition Guidance","Priority Booking"],popular:false},
-            {dur:"12 Months",period:"Annual Plan",price:"10,999",features:["Full Gym Access","Unlimited Classes","2 PT Sessions/mo","Full Nutrition Plan","Guest Pass (2/yr)"],popular:false},
+            {dur:"1 Month",period:"Monthly Plan",price:"250",features:["Full Gym Access","Weight Training","Cardio Zone","Floor Exercise Area"],popular:false},
+            {dur:"3 Months",period:"Quarterly Plan",price:"700",features:["Full Gym Access","Weight Training","Cardio Zone","Floor Exercises","Priority Support"],popular:true,badge:"Best Value"},
+            {dur:"6 Months",period:"Half-Yearly Plan",price:"1,300",features:["Full Gym Access","Weight Training","Cardio Zone","Floor Exercises","Strength Building"],popular:false},
+            {dur:"12 Months",period:"Annual Plan",price:"2,500",features:["Full Gym Access","All Facilities","Weight & Strength","Cardio Zone","Floor Exercise","Best Savings"],popular:false},
           ].map((p) => (
             <div className={`plan-card${p.popular ? " popular" : ""}`} key={p.dur}>
               {p.badge && <div className="plan-badge">{p.badge}</div>}
@@ -483,10 +483,10 @@ export default function Home() {
           <h2 className="section-title reveal">Visit <span className="section-title-gold">Sky Gym</span></h2>
           <div className="contact-items">
             {[
-              {icon:"📍",title:"Location",text:"123 Anna Salai, T. Nagar, Chennai, Tamil Nadu 600017"},
-              {icon:"📞",title:"Phone",text:"+91 98765 43210"},
+              {icon:"📍",title:"Location",text:"No.457, Sky Fitness Centre, Thiruvottiyur High Rd, Korukkupet, Old Washermanpet, Chennai – 600021"},
+              {icon:"📞",title:"Phone",text:"+91 97911 48321 / +91 98410 27093"},
               {icon:"📧",title:"Email",text:"info@skygym.in"},
-              {icon:"🕐",title:"Hours",text:"Mon–Fri: 5:30 AM – 10:00 PM | Sat–Sun: 6:00 AM – 8:00 PM"},
+              {icon:"🕐",title:"Hours",text:"Mon–Sun: 5:00 AM – 10:00 AM & 4:00 PM – 9:30 PM"},
             ].map((c) => (
               <div className="contact-item reveal" key={c.title}>
                 <div className="contact-icon">{c.icon}</div>
@@ -496,7 +496,7 @@ export default function Home() {
           </div>
         </div>
         <div className="contact-map">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.7!2d80.2327!3d13.0499!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTPCsDAyJzU5LjYiTiA4MMKwMTMnNTcuNyJF!5e0!3m2!1sen!2sin!4v1617000000000!5m2!1sen!2sin" allowFullScreen loading="lazy" title="Sky Gym Location"></iframe>
+          <iframe src="https://maps.google.com/maps?q=Sky+Gym+Thiruvottiyur+High+Road+Korukkupet+Old+Washermanpet+Chennai+600021&output=embed" allowFullScreen loading="lazy" title="Sky Gym Location"></iframe>
         </div>
       </section>
 
@@ -505,7 +505,7 @@ export default function Home() {
           <div className="footer-brand">
             <img src={LOGO} alt="Sky Gym" />
             <h3>Sky Gym</h3>
-            <p>Transforming lives through fitness since 2014. Chennai's most trusted fitness destination for all levels.</p>
+            <p>A well-known fitness centre in Korukkupet, Old Washermanpet, North Chennai offering affordable gym memberships, strength training, and cardio facilities for all levels.</p>
             <div className="social-links">
               <a href="#" className="social-link">Fb</a>
               <a href="#" className="social-link">Ig</a>
@@ -519,15 +519,15 @@ export default function Home() {
           </div>
           <div className="footer-col">
             <h4>Services</h4>
-            <ul>{["Personal Training","Group Classes","Boxing & MMA","Strength Training","Cardio Zone","Nutrition Guidance"].map((s) => <li key={s}><a href="#services">{s}</a></li>)}</ul>
+            <ul>{["Gym Workouts","Cardio Facilities","Floor Exercises","Weight Training","Fitness Space","Monthly Memberships"].map((s) => <li key={s}><a href="#services">{s}</a></li>)}</ul>
           </div>
           <div className="footer-col">
             <h4>Contact</h4>
             <ul>
-              <li><a href="#">123 Anna Salai, Chennai</a></li>
-              <li><a href="#">+91 98765 43210</a></li>
-              <li><a href="#">info@skygym.in</a></li>
-              <li><a href="#">Mon–Fri: 5:30 AM – 10 PM</a></li>
+              <li><a href="#">Korukkupet, Old Washermanpet, Chennai – 600021</a></li>
+              <li><a href="tel:+919791148321">+91 97911 48321</a></li>
+              <li><a href="tel:+919841027093">+91 98410 27093</a></li>
+              <li><a href="#">Mon–Sun: 5:00 AM–10:00 AM & 4:00–9:30 PM</a></li>
             </ul>
           </div>
         </div>
